@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php  
 include '/netting/baglan.php'; # bunu unutmuşuz :D salaklık bende aq :D
 include '/netting/islem.php'; # bunu unutmuşuz :D salaklık bende aq :D
@@ -16,8 +15,7 @@ ob_start();
 putenv("TZ=Europe/Istanbul");
 session_start();
 ?>
-=======
->>>>>>> 10cc717145c33b9a66db95707f458eb5c4331a88
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
