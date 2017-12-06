@@ -5,27 +5,34 @@ session_start();
 <?php 
 include 'baglan.php';
 
-if(!isset($_SESSION['login'])) {
+if (isset($_POST['admingiris'])) {
 
-	$admin_kadi=$_POST['admin_kadi'];
-	$admin_sifre=md5($_POST['admin_sifre']);
+	$kullanici_mail=$_POST['kullanici_mail'];
+	$kullanici_password=md5($_POST['kullanici_password']);
 
-	if ($admin_kadi && $admin_sifre) {
+	$kullanicisor=$db->prepare("SELECT * FROM kullanici where kullanici_mail=:mail and kullanici_password=:password and kullanici_yetki=:yetki");
+	$kullanicisor->execute(array(
+		'mail' => $kullanici_mail,
+		'password' => $kullanici_password,
+		'yetki' => 5
+	));
 
-		$sorgula=mysql_query("select * from admin where admin_kadi='$admin_kadi' and admin_sifre='$admin_sifre'");
-		$verisay=mysql_num_rows($sorgula);
-		if($verisay> 0 ){
-			$_SESSION['admin_kadi']=$admin_kadi;
-			
-			header('Location:../index.php');
-		} else {
+	echo $say=$kullanicisor->rowCount();
+
+	if ($say==1) {
+
+		$_SESSION['kullanici_mail']=$kullanici_mail;
+		header("Location:../index.php");
+		exit;
 
 
-			header('Location:../login.php?login=no');
 
-		}
+	} else {
 
+		header("Location:../login.php?durum=no");
+		exit;
 	}
+	
 
 }
 
