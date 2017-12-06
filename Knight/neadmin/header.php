@@ -2,9 +2,7 @@
 include '/netting/baglan.php'; # bunu unutmuşuz :D salaklık bende aq :D
 include '/netting/islem.php'; # bunu unutmuşuz :D salaklık bende aq :D
 
-$ayarsor=$db->prepare("select * from ayarlar where ayar_id=:id");
-$ayarsor->execute(array('id'=>0));
-$ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
+
 
 # kullanıcı sorgu
 
