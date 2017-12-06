@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
-        <span class="copyright">Copyright © 2015 | <a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste</span>
+        <span class="copyright">Copyright © 2017 | <a href="index.php">White&Blue</a> by Aras & Çağlar</span>
     </div>
     <!-- 
         All links in the footer should remain intact. 
