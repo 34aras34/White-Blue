@@ -1,6 +1,6 @@
 <?php  
 include '/netting/baglan.php'; # bunu unutmuşuz :D salaklık bende aq :D
-include '/netting/islem.php'; # bunu unutmuşuz :D salaklık bende aq :D
+
 
 
 
