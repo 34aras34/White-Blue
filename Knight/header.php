@@ -56,7 +56,7 @@
 <nav class="main-nav-outer" id="test"><!--main-nav-start-->
     <div class="container">
         <ul class="main-nav">
-            <li><a href="#header">Home</a></li>
+            <li><a href="#header">Anasayfa</a></li>
             <li><a href="#service">Services</a></li>
             <li><a href="#Portfolio">Portfolio</a></li>
             <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
