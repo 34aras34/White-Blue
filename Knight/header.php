@@ -41,7 +41,7 @@
 <header class="header" id="header"><!--header-start-->
 	<div class="container">
     	<figure class="logo animated fadeInDown delay-07s">
-        	<a href="#"><img src="img/logo.png" alt=""></a>	
+        	<a href="#"><img class="animated fadeInDown" src="img/logo.png" alt=""></a>	
         </figure>	
         <h1 class="animated fadeInDown delay-07s">Welcome To Knight Studios</h1>
         <ul class="we-create animated fadeInUp delay-1s">
