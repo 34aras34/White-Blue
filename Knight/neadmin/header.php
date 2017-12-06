@@ -1,43 +1,15 @@
-<?php  
-include '/netting/baglan.php'; # bunu unutmuşuz :D salaklık bende aq :D
-include '/netting/islem.php'; # bunu unutmuşuz :D salaklık bende aq :D
-
-
-
-# kullanıcı sorgu
-
-$kullanicisor=$db->prepare("SELECT * FROM kullanici where kullanici_mail=:mail");
-$kullanicisor->execute(array(
-    'mail' => $_SESSION['kullanici_mail']
-));
-$say=$kullanicisor->rowCount();
-$kullanicicek=$kullanicisor->fetch(PDO::FETCH_ASSOC);
-
-if ($say==0) {
-
-    Header("Location:login.php?durum=izinsiz");
-    exit;
-
-}
-?>
-<?php 
-ob_start();
-putenv("TZ=Europe/Istanbul");
-session_start();
-?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WhiteBLUE & Yazılım Admin Panel v1</title>
+    <title>Responsive Bootstrap Advance Admin Template</title>
+
     <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="assets/css/bootstrap-fileupload.min.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
-    <!--CUSTOM BASIC STYLES-->
+       <!--CUSTOM BASIC STYLES-->
     <link href="assets/css/basic.css" rel="stylesheet" />
     <!--CUSTOM MAIN STYLES-->
     <link href="assets/css/custom.css" rel="stylesheet" />
@@ -54,14 +26,16 @@ session_start();
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
-                <a class="navbar-brand" href="index.html">WhiteBLUE & Yazılım<br><b style="font-size:10px">Kaliteli Hizmet</b></a>
-                </div>
+                <a class="navbar-brand" href="index.html">COMPANY NAME</a>
+            </div>
 
-                <div class="header-right">
+            <div class="header-right">
 
-                
-                <a href="logout.php" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle"></i>Güvenli Çıkış</a>
+                <a href="message-task.html" class="btn btn-info" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
+                <a href="message-task.html" class="btn btn-primary" title="New Task"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>
+                <a href="login.html" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
 
-                </div>
-                </nav>
+            </div>
+        </nav>
+
+        

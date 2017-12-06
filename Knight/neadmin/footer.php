@@ -1,5 +1,6 @@
-<div id="footer-sec">
-        &copy; 2016 WhiteBlue | Design By : Aras Dogukan Yigit <a href="http://whitemmo.com/" target="_blank">WhiteBlue.com</a>
+
+    <div id="footer-sec">
+        &copy; 2014 YourCompany | Design By : <a href="http://www.binarytheme.com/" target="_blank">BinaryTheme.com</a>
     </div>
     <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
@@ -11,7 +12,6 @@
     <script src="assets/js/jquery.metisMenu.js"></script>
        <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/bootstrap-fileupload.js"></script>
     
 
 
