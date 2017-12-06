@@ -1,4 +1,4 @@
-
+<?php include 'header.php'; ?>
 
 
 <nav class="main-nav-outer" id="test"><!--main-nav-start-->
@@ -295,3 +295,6 @@ we were well fed and drunk all the time!</p>
         </div>
 </section>
 </div>
+
+
+<?php include 'footer.php'; ?>
