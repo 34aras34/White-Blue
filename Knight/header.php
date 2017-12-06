@@ -57,12 +57,12 @@
     <div class="container">
         <ul class="main-nav">
             <li><a href="#header">Anasayfa</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#service">Hizmetler</a></li>
+            <li><a href="#Portfolio">Çalışmalarım</a></li>
             <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
-            <li><a href="#client">Clients</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#client">Müşterilerimiz</a></li>
+            <li><a href="#team">Ekibimiz</a></li>
+            <li><a href="#contact">İletişim</a></li>
         </ul>
         <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
     </div>
