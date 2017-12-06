@@ -6,19 +6,9 @@ include '/netting/islem.php'; # bunu unutmuşuz :D salaklık bende aq :D
 
 # kullanıcı sorgu
 
-$kullanicisor=$db->prepare("SELECT * FROM kullanici where kullanici_mail=:mail");
-$kullanicisor->execute(array(
-    'mail' => $_SESSION['kullanici_mail']
-));
-$say=$kullanicisor->rowCount();
-$kullanicicek=$kullanicisor->fetch(PDO::FETCH_ASSOC);
 
-if ($say==0) {
 
-    Header("Location:login.php?durum=izinsiz");
-    exit;
 
-}
 ?>
 <?php 
 ob_start();
