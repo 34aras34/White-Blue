@@ -1,7 +1,11 @@
 <?php  
-include '/netting/baglan.php'; # bunu unutmuşuz :D salaklık bende aq :D
+include '/netting/baglan.php'; 
 
 
+
+$ayarsor=$db->prepare("select * from login where login_id=:id");
+$ayarsor->execute(array('id'=>1));
+$ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
 
 
 # kullanıcı sorgu

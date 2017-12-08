@@ -1,6 +1,6 @@
 
-    <div id="footer-sec">
-        &copy; 2014 YourCompany | Design By : <a href="http://www.binarytheme.com/" target="_blank">BinaryTheme.com</a>
+    <div class="col col-md-12" id="footer-sec">
+        &copy; 2017 White & Blue | Design By : <a href="http://www.WhiteBlue.com/" target="_blank">WhiteBlue.com</a>
     </div>
     <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
