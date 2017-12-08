@@ -6,7 +6,7 @@ session_start();
 
 include"baglan.php";
 
-if (isset($_POST['admingiris'])) {
+if (isset($_POST['login'])) {
 
 	$login_kadi=$_POST['login_kadi'];
 	$login_sifre=md5($_POST['login_sifre']);
@@ -23,14 +23,14 @@ if (isset($_POST['admingiris'])) {
 
 		$_SESSION['login_kadi']=$login_kadi;
 		header("Location:../index.php");
-		exit;
+		
 
 
 
 	} else {
 
 		header("Location:../login.php?durum=no");
-		exit;
+		
 	}
 	
 
