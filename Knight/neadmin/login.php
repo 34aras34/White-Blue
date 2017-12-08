@@ -19,7 +19,7 @@
   <div class="container">
     <div class="row text-center " style="padding-top:100px;">
       <div class="col-md-12">
-        <img src="assets/img/logo-invoice.png" />
+        <img src="assets/img/logom.png" />
       </div>
     </div>
     <div class="row ">
@@ -29,7 +29,7 @@
         <div class="panel-body">
           <form action="netting/islem.php" method="POST">
             <hr />
-            <center><h5>Giriş sayfası</h5>
+            <center><h3>Giriş sayfası</h3>
               <br />
               <div class="form-group input-group">
                 <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
