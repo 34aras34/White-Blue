@@ -8,9 +8,9 @@
                             <img src="assets/img/user.png" class="img-thumbnail" />
 
                             <div class="inner-text">
-                                Jhon Deo Alex
+                                Hosgeldin <?php echo $ayarcek[login_kadi];  ?> 
                             <br />
-                                <small>Last Login : 2 Weeks Ago </small>
+                                
                             </div>
                         </div>
 
@@ -45,7 +45,7 @@
                      <li>
                         <a href="index.php"><i class="fa fa-cogs"></i>Admin Bilgileri</a>
                     </li> 
-                    
+
                 </ul>
 
             </div>
