@@ -39,7 +39,7 @@
                 <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
                 <input type="password" name="login_sifre" class="form-control"  placeholder="Şifre" />
               </div>
-              <button style="width:100%" name="loggin" type="submit" class="btn btn-success ">Giriş yap</button>
+              <button style="width:100%" name="login" type="submit" class="btn btn-success ">Giriş yap</button>
             </form>
           </div>
 

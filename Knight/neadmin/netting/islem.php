@@ -1,30 +1,42 @@
+<?php
+ob_start(); 
+session_start();
+?>
 <?php 
 
 include"baglan.php";
 
-if(isset($_POST['loggin'])){
+if (isset($_POST['admingiris'])) {
 
-	$login_kadi = $_POST['login_kadi'];
-	$login_sifre = $_POST['login_sifre'];
+	$login_kadi=$_POST['login_kadi'];
+	$login_sifre=md5($_POST['login_sifre']);
 
-	if($login_sifre && $login_kadi){
+	$kullanicisor=$db->prepare("SELECT * FROM login where login_kadi=:kadi and login_sifre=:password");
+	$kullanicisor->execute(array(
+		'kadi' => $login_kadi,
+		'password' => $login_sifre
+	));
 
-		$ara = $db->prepare("SELECT count(*) from login where login_kadi = '$login_kadi', login_sifre = '$login_sifre' ");
-		$saya = $ara->execute(array('login_kadi' => $login_kadi, 'login_sifre' => $login_sifre));
-		$say = $saya->rowCount();
+	echo $say=$kullanicisor->rowCount();
 
-		if($say > 0){
+	if ($say==1) {
 
-			$_SESSION['login_kadi'] = $login_kadi;
+		$_SESSION['login_kadi']=$login_kadi;
+		header("Location:../index.php");
+		exit;
 
-			header("Location:../index.php");
-		}
-		else {
-			header("Location:../login.php?login=no");
-		}
+
+
+	} else {
+
+		header("Location:../login.php?durum=no");
+		exit;
 	}
+	
 
 }
+
+
 
 
 
