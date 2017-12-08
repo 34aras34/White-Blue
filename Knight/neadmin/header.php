@@ -8,8 +8,21 @@ $ayarsor->execute(array('id'=>1));
 $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
 
 
-# kullanıcı sorgu
 
+# kullanıcı sorgu
+$kullanicisor=$db->prepare("SELECT * FROM login where login_kadi=:kadi");
+$kullanicisor->execute(array(
+    'kadi' => $_SESSION['login_kadi']
+));
+$say=$kullanicisor->rowCount();
+$kullanicicek=$kullanicisor->fetch(PDO::FETCH_ASSOC);
+
+if ($say==0) {
+
+    Header("Location:login.php?durum=izinsiz");
+    exit;
+
+}
 
 
 
