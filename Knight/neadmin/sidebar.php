@@ -25,7 +25,7 @@
                         <a href="#"><i class="fa fa-desktop "></i>Ayarlar <span class="fa arrow"></span></a>
                          <ul class="nav nav-second-level">
                             <li>
-                                <a href="panel-tabs.html"><i class="fa fa-wrench"></i>Site Genel Ayarlar</a>
+                                <a href="genelayarlar.php"><i class="fa fa-wrench"></i>Site Genel Ayarlar</a>
                             </li>
                             <li>
                                 <a href="notification.html"><i class="fa fa-bell "></i>Site SEO Ayarları</a>
